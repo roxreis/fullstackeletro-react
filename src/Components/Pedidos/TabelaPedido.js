@@ -29,6 +29,7 @@ const ListPedidos = () => {
                                         <th scope="col">Valor Unitario</th>
                                         <th scope="col">Quant</th>
                                         <th scope="col">Valor Total</th>
+                                        <th scope="col">Data Pedido</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -40,6 +41,7 @@ const ListPedidos = () => {
                                             <td>{ped.valor_unitario} </td>
                                             <td>{ped.quantidade} </td>
                                             <td>{ped.valor_total} </td>
+                                            <td>{ped.data_pedido} </td>
                                         </tr>
                                 </tbody>
                             </table>

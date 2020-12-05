@@ -37,10 +37,9 @@ const ListProd = () => {
                                 <p>valor inicial <strike style={{ color: "red" }}> R$ {prod.preco}</strike></p>
                                 <p>Valor c/ desconto<strong> R$ {prod.preco_c_desconto}</strong></p>
                             </div>
-                            
-                        
-                    )
-                }
+
+                        )
+                    }
                 ) }</section>
         </>
     )
