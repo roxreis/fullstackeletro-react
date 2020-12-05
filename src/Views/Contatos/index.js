@@ -27,7 +27,7 @@ export default function Contatos() {
                         <Form.Label>Mensagem</Form.Label>
                         <Form.Control as="textarea" rows={3} />
                     </Form.Group>
-                    <Button variant="success"  type="submit">Enviar</Button>{' '}
+                    <Button variant="success" className="button-contato" type="submit">Enviar</Button>{' '}
                 </Form>
             </section>
         </Row>

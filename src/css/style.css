@@ -115,6 +115,7 @@ aside ul li:hover{
 .boxProdutos {
     line-height: 19px;
     color: #5d5d5d;;
+    cursor: pointer;
 }
 
 .boxProdutos img {
@@ -169,12 +170,13 @@ aside ul li:hover{
 }
 
 .button-contato {
-    width: 15%;
+    width: 18%;
     margin-top: 10px;
     border-radius: 7px;
     color: white;
     background-color: green;
-    height: 30px;
+    height: 45px;
+
 }
 
 /* LOJAS */
@@ -263,7 +265,7 @@ tbody tr th, thead tr th {
 }
 
 .div-form-pedidos {
-    width: 60%;
+    width:  96%;;
     background-color: white;
     padding: 15px;
     border-radius: 10px;
@@ -273,16 +275,20 @@ tbody tr th, thead tr th {
 }
 
 .div-table-pedidos {
-    width: 90%;
+    width: 61%;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 4px 4px grey;
     margin-right: 10px;
+    height: auto;
 
 }
 
-.btn-pedidos {width: 74px;height: 34px;}
+.btn-pedidos {   
+    width: 123px;
+    height: 42px;
+}
 
 
 /* FOOTER */

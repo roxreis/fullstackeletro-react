@@ -13,13 +13,6 @@ const ListProd = () => {
         fectchData();
     }, [])
 
-    // let Zoom = (imagem) => {
-    //     if(imagem.target.style.width === '120px')
-    //     imagem.target.style = 'width:240px'
-    //     else
-    //     imagem.target.style = 'width:120px'
-    // }
-
 
 
     return (
@@ -30,8 +23,8 @@ const ListProd = () => {
                 products.map(prod => {
                     return (
 
-                            <div className="boxProdutos" id={prod.categoria}> 
-                                <img src={prod.imagem}  alt={prod.descricao}  />
+                            <div className="boxProdutos" id={prod.categoria}  > 
+                                <img src={prod.imagem} id="imagem"  alt={prod.descricao} />
                                 <p><strong>{prod.descricao}</strong></p>
                                 <hr />
                                 <p>valor inicial <strike style={{ color: "red" }}> R$ {prod.preco}</strike></p>

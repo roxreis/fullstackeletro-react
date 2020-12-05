@@ -1,18 +1,33 @@
 <?php 
 
-$host = "localhost";
-$user = "root";
-$pass = "";
-$dbname = "fteletro";
+function consultar($sql)
+{ 
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $dbname = "fteletro";
 
-$con = mysqli_connect($host, $user, $pass, $dbname);
+    $con = mysqli_connect($host, $user, $pass, $dbname);
+    $res = mysqli_query($con, $sql);
+    mysqli_close($con);
+    return $res;
 
-if ($con) {
-        
-    return true;
-
-} else {
-
-    die ("falha" .mysqli_errno($con));
 }
+
+function inserir($sql)
+{ 
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $dbname = "fteletro";
+
+    $con = mysqli_connect($host, $user, $pass, $dbname);
+    // $res = mysqli_query($con, $sql);
+    mysqli_close($con);
+
+}
+
+
+
+
 

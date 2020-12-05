@@ -15,11 +15,14 @@ const ListPedidos = () => {
 
 
     return (
-        <> {
-            pedidos.map(ped => {
-                return (
+        <> 
+
                         <div className="table-wrapper-scroll-y my-custom-scrollbar overflow-auto div-table-pedidos" >
+                        <div class="alert alert-primary" role="alert">
+                            Dados vindos do banco!
+                        </div> 
                             <table className="table table-bordered table-hover display dataTable dtr-inline table-pedidos ">
+                          
                                 <thead>
                                     <tr>
                                         <th scope="col">Numero Pedido</th>
@@ -33,7 +36,12 @@ const ListPedidos = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
+                                {
+                                        pedidos.map(ped => {
+                                        return (
+                                            <> 
                                         <tr> 
+                                 
                                             <th scope="row">{ped.id_pedido}</th>
                                             <td>{ped.id_cliente} </td>
                                             <td>{ped.id_prod} </td>
@@ -42,13 +50,19 @@ const ListPedidos = () => {
                                             <td>{ped.quantidade} </td>
                                             <td>{ped.valor_total} </td>
                                             <td>{ped.data_pedido} </td>
+                                    
                                         </tr>
+                                        </>
+                                            )
+                                        })
+                                    }
                                 </tbody>
+                            
                             </table>
                         </div>
-                )
-            })
-        }
+                
+           
+        
         </>
     )
 }

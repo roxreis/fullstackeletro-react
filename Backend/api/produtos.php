@@ -2,8 +2,9 @@
 
 require_once('../conexao.php');
 
-$select = 'SELECT * FROM produtos';
-$result = $con->query($select);
+$sql = 'SELECT * FROM produtos';
+$result = consultar($sql);
+
 $products = [];
 
 while ($row = mysqli_fetch_assoc($result)) {
