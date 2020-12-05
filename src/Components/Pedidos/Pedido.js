@@ -37,7 +37,7 @@ const ListPedidos = () => {
                                             <td>{ped.id_cliente} </td>
                                             <td>{ped.id_prod} </td>
                                             <td>{ped.nome_produto} </td>
-                                            <td>{ped.valor_unitário} </td>
+                                            <td>{ped.valor_unitario} </td>
                                             <td>{ped.quantidade} </td>
                                             <td>{ped.valor_total} </td>
                                         </tr>

@@ -34,9 +34,10 @@ const ListProd = () => {
                                 <img src={prod.imagem}  alt={prod.descricao}  />
                                 <p><strong>{prod.descricao}</strong></p>
                                 <hr />
-                                <p>valor inicial <strike> R$ {prod.preco}</strike></p>
-                                <p>Valor com desconto<strong> R$ {prod.preco_c_desconto}</strong></p>
+                                <p>valor inicial <strike style={{ color: "red" }}> R$ {prod.preco}</strike></p>
+                                <p>Valor c/ desconto<strong> R$ {prod.preco_c_desconto}</strong></p>
                             </div>
+                            
                         
                     )
                 }
